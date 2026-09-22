@@ -50,6 +50,53 @@ footer{border-top:1px solid var(--border);padding:32px 0;color:var(--muted);font
 </style>
 <style>
 .find-us{padding-top:70px}.market-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.market-card{min-height:190px;padding:26px;border:1px solid var(--border);border-radius:18px;background:linear-gradient(145deg,rgba(10,26,53,.9),rgba(4,10,22,.94));display:flex;align-items:center;transition:.25s}.market-card:hover{transform:translateY(-5px);border-color:rgba(111,215,255,.5)}.market-card h3{font-size:25px;margin:0 0 8px}.market-card p{color:var(--muted);font-size:13px;margin:0 0 15px}.market-card span{font-size:10px;font-weight:900;letter-spacing:.1em;color:#72ddff}.coming-soon{border-color:rgba(154,99,255,.35);background:radial-gradient(circle at 85% 15%,rgba(154,99,255,.16),transparent 45%),linear-gradient(145deg,rgba(12,20,48,.92),rgba(4,10,22,.94))}.coming-soon span{color:#c49cff}@media(max-width:850px){.market-grid{grid-template-columns:1fr}} 
+</style><style>
+/* Unified TCG hero */
+.hero-tcg{padding:30px 0 70px;background:transparent;border:0}
+.hero-tcg-box{position:relative;min-height:480px;display:grid;grid-template-columns:44% 56%;align-items:center;overflow:hidden;border:1px solid #168cff;border-radius:24px;background:radial-gradient(circle at 62% 50%,rgba(26,101,255,.18),transparent 28%),radial-gradient(circle at 86% 50%,rgba(214,65,255,.16),transparent 30%),linear-gradient(115deg,#020817,#03132e 55%,#020817);box-shadow:inset 0 0 70px rgba(26,106,255,.12),0 20px 55px rgba(0,0,0,.35)}
+.hero-tcg-copy{position:relative;z-index:5;padding:54px 20px 54px 58px}
+.hero-tcg-copy .kicker{margin-bottom:14px}
+.hero-tcg-copy h2{font-size:clamp(48px,5vw,78px);line-height:.94;letter-spacing:-.055em;margin:0 0 22px;color:#fff}
+.hero-tcg-copy h2 span{color:#17c8ff}
+.hero-tcg-copy p{max-width:610px;color:#c8d8ed;font-size:18px;line-height:1.5;margin:0 0 30px}
+.hero-tcg-btn{padding:17px 28px;font-size:12px;border-radius:11px}
+.hero-tcg-art{position:relative;height:100%;min-height:480px;overflow:hidden}
+.hero-card{position:absolute;width:155px;height:217px;top:50%;margin-top:-108px;border-radius:10px;background-size:100% 100%;background-position:center;background-repeat:no-repeat;box-shadow:0 18px 40px rgba(0,0,0,.55),0 0 28px rgba(32,156,255,.22);border:1px solid rgba(200,235,255,.3);z-index:3;transition:.25s}
+.hero-pokemon{left:8%;transform:rotate(-10deg);background-image:url("https://sleevenocardbehind.com/wp-content/uploads/2024/10/International-Pokemon-Card-Back%403x.png");background-size:145% 145%}
+.hero-magic{left:28%;transform:rotate(-3deg);background-image:url("https://tolkiengateway.net/w/images/1/18/Magic_the_Gathering_Card_Back.jpg")}
+.hero-onepiece{left:48%;transform:rotate(5deg);background-image:url("https://en.wikipedia.org/wiki/Special:Redirect/file/One_Piece_Card_Game_back.webp")}
+.hero-yugioh{left:68%;transform:rotate(11deg);background-image:url("https://images.ygoprodeck.com/images/cards/89631139.jpg")}
+.energy{position:absolute;border-radius:50%;filter:blur(20px);opacity:.65;z-index:1}
+.energy-blue{width:310px;height:220px;left:8%;top:25%;background:rgba(0,157,255,.42);transform:rotate(-20deg)}
+.energy-purple{width:330px;height:230px;left:43%;top:20%;background:rgba(176,55,255,.34)}
+.energy-gold{width:280px;height:210px;right:-4%;top:30%;background:rgba(255,164,30,.3)}
+.hero-tcg-trust{display:grid;grid-template-columns:repeat(4,1fr);margin-top:30px;padding:8px 0}
+.hero-tcg-trust>div{display:flex;align-items:center;gap:15px;padding:12px 28px;border-right:1px solid rgba(76,146,255,.22)}
+.hero-tcg-trust>div:last-child{border-right:0}
+.hero-tcg-trust strong{font-size:28px;color:#10bfff}
+.hero-tcg-trust span{display:flex;flex-direction:column;gap:4px}
+.hero-tcg-trust b{font-size:12px;color:#fff;letter-spacing:.04em}
+.hero-tcg-trust small{font-size:11px;color:#aabbd1}
+@media(max-width:850px){
+ .hero-tcg-box{grid-template-columns:1fr;min-height:auto}
+ .hero-tcg-copy{padding:42px 34px 18px}
+ .hero-tcg-copy h2{font-size:clamp(42px,9vw,64px)}
+ .hero-tcg-art{min-height:330px}
+ .hero-card{width:120px;height:168px;margin-top:-84px}
+ .hero-tcg-trust{grid-template-columns:repeat(2,1fr);gap:8px}
+ .hero-tcg-trust>div{border-right:0;padding:12px 16px}
+}
+@media(max-width:560px){
+ .hero-tcg{padding:15px 0 50px}
+ .hero-tcg-copy{padding:34px 24px 10px}
+ .hero-tcg-copy h2{font-size:42px}
+ .hero-tcg-copy p{font-size:15px}
+ .hero-tcg-art{min-height:250px}
+ .hero-card{width:82px;height:115px;margin-top:-58px}
+ .hero-pokemon{left:4%}.hero-magic{left:26%}.hero-onepiece{left:48%}.hero-yugioh{left:70%}
+ .hero-tcg-trust{grid-template-columns:1fr 1fr}
+ .hero-tcg-trust strong{font-size:22px}.hero-tcg-trust b{font-size:10px}.hero-tcg-trust small{font-size:9px}
+}
 </style></head>
 <body>
 <header class="site-header"><div class="container nav">
@@ -64,17 +111,28 @@ footer{border-top:1px solid var(--border);padding:32px 0;color:var(--muted);font
 <div class="buttons"><a class="btn primary" href="https://tcgplayer.com/sellers/DonsDigitalCards/7028c644" target="_blank" rel="noopener">SHOP TCGPLAYER ↗</a><a class="btn secondary" href="https://ebay.io/m/kwwi12" target="_blank" rel="noopener">SHOP eBAY ↗</a></div>
 <div class="trust-row"><div class="trust-pill"><strong>150+</strong> POSITIVE TCGPLAYER REVIEWS</div><div class="trust-pill">FAST SHIPPING</div><div class="trust-pill">COLLECTOR FOCUSED</div></div>
 </div></section>
-<section class="section inventory" id="inventory">
+<section class="section inventory hero-tcg" id="inventory">
 <div class="container">
-<div class="tcg-section-head">
-<h2>YOUR FAVORITE TCGs</h2>
-<p>Singles, sealed products, and more from the biggest trading card games.</p>
+<div class="hero-tcg-box">
+<div class="hero-tcg-copy">
+<div class="kicker">YOUR FAVORITE TCGs</div>
+<h2>Find all your <span>Favorite TCG’s</span> here.</h2>
+<p>Singles, sealed products, and collector favorites from Pokémon, Magic: The Gathering, One Piece, and Yu-Gi-Oh! all in one place.</p>
+<a class="btn primary hero-tcg-btn" href="https://tcgplayer.com/sellers/DonsDigitalCards/7028c644" target="_blank" rel="noopener">SHOP TCGPLAYER ↗</a>
 </div>
-<div class="tcg-grid">
-<article class="tcg-tile pokemon-tile"><div class="tcg-info"><h3>Pokémon</h3><p>Singles, sealed and collector favorites.</p><a class="btn primary" href="https://tcgplayer.com/sellers/DonsDigitalCards/7028c644" target="_blank" rel="noopener">SHOP TCGPLAYER ↗</a></div><div class="tcg-visual pokemon-back"><span>Pokémon</span></div></article>
-<article class="tcg-tile magic-tile"><div class="tcg-info"><h3>Magic: The<br>Gathering</h3><p>Singles, sealed products and more.</p><a class="btn primary" href="https://tcgplayer.com/sellers/DonsDigitalCards/7028c644" target="_blank" rel="noopener">SHOP TCGPLAYER ↗</a></div><div class="tcg-visual magic-back"><span>MAGIC</span><small>THE GATHERING</small><b>DECKMASTER</b></div></article>
-<article class="tcg-tile onepiece-tile"><div class="tcg-info"><h3>One Piece</h3><p>Singles, sealed products and more.</p><a class="btn primary" href="https://tcgplayer.com/sellers/DonsDigitalCards/7028c644" target="_blank" rel="noopener">SHOP TCGPLAYER ↗</a></div><div class="tcg-visual onepiece-back"><span>ONE PIECE</span><small>CARD GAME</small></div></article>
-<article class="tcg-tile yugioh-tile"><div class="tcg-info"><h3>Yu-Gi-Oh!</h3><p>Singles, sealed products and more.</p><a class="btn primary" href="https://tcgplayer.com/sellers/DonsDigitalCards/7028c644" target="_blank" rel="noopener">SHOP TCGPLAYER ↗</a></div><div class="tcg-visual yugioh-back"><span>✦</span></div></article>
+<div class="hero-tcg-art" aria-label="Pokémon, Magic: The Gathering, One Piece and Yu-Gi-Oh! cards">
+<div class="hero-card hero-pokemon"></div>
+<div class="hero-card hero-magic"></div>
+<div class="hero-card hero-onepiece"></div>
+<div class="hero-card hero-yugioh"></div>
+<div class="energy energy-blue"></div><div class="energy energy-purple"></div><div class="energy energy-gold"></div>
+</div>
+</div>
+<div class="hero-tcg-trust">
+<div><strong>✓</strong><span><b>QUALITY CARDS</b><small>Carefully sourced inventory</small></span></div>
+<div><strong>▣</strong><span><b>FAST SHIPPING</b><small>Secure and reliable delivery</small></span></div>
+<div><strong>▤</strong><span><b>GREAT SELECTION</b><small>Singles, sealed and more</small></span></div>
+<div><strong>♙</strong><span><b>TRUSTED SELLER</b><small>Over 150+ positive reviews</small></span></div>
 </div>
 </div></section>
 <section class="section find-us" id="find-us"><div class="container">
