@@ -97,6 +97,35 @@ footer{border-top:1px solid var(--border);padding:32px 0;color:var(--muted);font
  .hero-tcg-trust{grid-template-columns:1fr 1fr}
  .hero-tcg-trust strong{font-size:22px}.hero-tcg-trust b{font-size:10px}.hero-tcg-trust small{font-size:9px}
 }
+</style><style>
+/* Polished hero matching the approved concept */
+.hero-tcg{padding:28px 0 58px;background:transparent}
+.hero-tcg-box{min-height:470px;grid-template-columns:46% 54%;border-radius:22px;border:1px solid #1d9dff;background:radial-gradient(circle at 66% 50%,rgba(0,143,255,.18),transparent 25%),radial-gradient(circle at 82% 48%,rgba(190,45,255,.17),transparent 30%),linear-gradient(105deg,#020817 0%,#03142e 58%,#020817 100%);box-shadow:inset 0 0 80px rgba(21,118,255,.1),0 20px 50px rgba(0,0,0,.3)}
+.hero-tcg-copy{padding:48px 24px 48px 54px}
+.hero-tcg-copy h2{font-size:clamp(46px,5vw,74px);line-height:.95}
+.hero-tcg-copy h2 span{color:#19c8ff}
+.hero-tcg-copy p{font-size:17px;line-height:1.45;max-width:570px}
+.hero-tcg-art{min-height:470px}
+.hero-card{width:148px;height:207px;margin-top:-104px}
+.hero-pokemon{left:6%;transform:rotate(-11deg)}
+.hero-magic{left:28%;transform:rotate(-3deg)}
+.hero-onepiece{left:50%;transform:rotate(5deg)}
+.hero-yugioh{left:72%;transform:rotate(11deg);background-size:100% 100%;background-position:center}
+.hero-tcg-trust{margin-top:26px}
+@media(max-width:850px){
+ .hero-tcg-box{grid-template-columns:1fr}
+ .hero-tcg-copy{padding:38px 32px 10px}
+ .hero-tcg-art{min-height:330px}
+ .hero-card{width:120px;height:168px;margin-top:-84px}
+}
+@media(max-width:560px){
+ .hero-tcg{padding:14px 0 45px}
+ .hero-tcg-copy{padding:30px 22px 6px}
+ .hero-tcg-copy h2{font-size:40px}
+ .hero-tcg-copy p{font-size:14px}
+ .hero-tcg-art{min-height:245px}
+ .hero-card{width:82px;height:115px;margin-top:-57px}
+}
 </style></head>
 <body>
 <header class="site-header"><div class="container nav">
@@ -118,7 +147,6 @@ footer{border-top:1px solid var(--border);padding:32px 0;color:var(--muted);font
 <div class="kicker">YOUR FAVORITE TCGs</div>
 <h2>Find all your <span>Favorite TCG’s</span> here.</h2>
 <p>Singles, sealed products, and collector favorites from Pokémon, Magic: The Gathering, One Piece, and Yu-Gi-Oh! all in one place.</p>
-<a class="btn primary hero-tcg-btn" href="https://tcgplayer.com/sellers/DonsDigitalCards/7028c644" target="_blank" rel="noopener">SHOP TCGPLAYER ↗</a>
 </div>
 <div class="hero-tcg-art" aria-label="Pokémon, Magic: The Gathering, One Piece and Yu-Gi-Oh! cards">
 <div class="hero-card hero-pokemon"></div>
