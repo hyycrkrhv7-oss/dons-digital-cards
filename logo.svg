@@ -1,27 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" role="img" aria-labelledby="title desc">
-<title id="title">Don's Digital Cards</title><desc id="desc">Neon chrome trading card logo</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="t d">
+<title id="t">Don's Digital Cards</title><desc id="d">Neon blue and purple trading card logo with chrome lettering</desc>
 <defs>
-  <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#ffffff"/><stop offset=".28" stop-color="#d9e9ff"/><stop offset=".5" stop-color="#ffffff"/><stop offset=".72" stop-color="#8fb9e8"/><stop offset="1" stop-color="#ffffff"/>
-  </linearGradient>
-  <linearGradient id="blueviolet" x1="0" y1="0" x2="1" y2="0">
-    <stop stop-color="#18d9ff"/><stop offset=".52" stop-color="#5b7cff"/><stop offset="1" stop-color="#e83cff"/>
-  </linearGradient>
-  <filter id="glow" x="-40%" y="-50%" width="180%" height="200%">
-    <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <filter id="soft" x="-30%" y="-40%" width="160%" height="180%"><feGaussianBlur stdDeviation="2.5"/></filter>
+ <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".22" stop-color="#dff5ff"/><stop offset=".48" stop-color="#fff"/><stop offset=".72" stop-color="#7d9bb8"/><stop offset="1" stop-color="#f8fdff"/></linearGradient>
+ <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#11eaff"/><stop offset=".48" stop-color="#526cff"/><stop offset="1" stop-color="#f24cff"/></linearGradient>
+ <linearGradient id="card" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#10eaff"/><stop offset=".55" stop-color="#5567ff"/><stop offset="1" stop-color="#e84cff"/></linearGradient>
+ <radialGradient id="nebula"><stop stop-color="#3245b9" stop-opacity=".42"/><stop offset=".7" stop-color="#3d137d" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+ <filter id="g" x="-50%" y="-80%" width="200%" height="260%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="sg" x="-30%" y="-50%" width="160%" height="200%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 </defs>
-<!-- original card-stack mark, kept left of the name for header readability -->
-<g transform="translate(28 38)" fill="none" stroke="url(#blueviolet)" stroke-width="9" stroke-linejoin="round" filter="url(#glow)">
-  <rect x="18" y="32" width="112" height="156" rx="12" transform="rotate(-18 74 110)"/>
-  <rect x="42" y="18" width="112" height="156" rx="12" transform="rotate(-8 98 96)"/>
-  <rect x="66" y="10" width="112" height="156" rx="12" transform="rotate(3 122 88)"/>
+<rect width="1200" height="360" rx="22" fill="#030817"/>
+<ellipse cx="735" cy="175" rx="540" ry="210" fill="url(#nebula)"/>
+<g opacity=".9" fill="none" stroke="url(#accent)" filter="url(#g)">
+ <path d="M35 278 C190 65 480 45 745 92 C940 126 1110 84 1170 46" stroke-width="5"/>
+ <path d="M62 310 C260 175 450 192 650 236 C860 283 1040 252 1170 164" stroke-width="4"/>
 </g>
-<path d="M38 205 C170 238 260 230 350 211" fill="none" stroke="url(#blueviolet)" stroke-width="5" opacity=".9" filter="url(#soft)"/>
-<g font-family="Arial,Helvetica,sans-serif" font-weight="900" font-style="italic">
-  <text x="235" y="127" font-size="108" letter-spacing="3" fill="url(#chrome)" stroke="#173b72" stroke-width="7" paint-order="stroke" filter="url(#glow)">DON’S</text>
-  <text x="242" y="193" font-size="52" letter-spacing="7" fill="url(#chrome)" stroke="#233e74" stroke-width="3" paint-order="stroke">DIGITAL CARDS</text>
+<!-- original generic card fan -->
+<g fill="#07112b" stroke="url(#card)" stroke-width="6" filter="url(#g)">
+ <rect x="95" y="74" width="145" height="215" rx="14" transform="rotate(-18 167 181)"/>
+ <rect x="133" y="49" width="145" height="215" rx="14" transform="rotate(-5 205 156)"/>
+ <rect x="177" y="61" width="145" height="215" rx="14" transform="rotate(9 249 169)"/>
 </g>
-<path d="M235 210 H955" stroke="url(#blueviolet)" stroke-width="4" filter="url(#soft)"/>
+<g fill="none" stroke="url(#card)" stroke-width="3" opacity=".9">
+ <rect x="115" y="94" width="105" height="175" rx="9" transform="rotate(-18 167 181)"/>
+ <rect x="153" y="69" width="105" height="175" rx="9" transform="rotate(-5 205 156)"/>
+ <rect x="197" y="81" width="105" height="175" rx="9" transform="rotate(9 249 169)"/>
+</g>
+<!-- abstract card-back marks -->
+<g fill="none" stroke="url(#accent)" stroke-width="3" opacity=".75">
+ <path d="M165 141l35 28-35 28-35-28z" transform="rotate(-18 165 169)"/>
+ <circle cx="205" cy="157" r="27"/>
+ <path d="M224 135l22 38-38-6z" transform="rotate(9 249 169)"/>
+</g>
+<!-- wordmark -->
+<g font-family="Arial,Helvetica,sans-serif" font-weight="900" filter="url(#sg)">
+ <text x="325" y="190" font-size="128" letter-spacing="3" fill="url(#chrome)" stroke="#ffffff" stroke-opacity=".16" stroke-width="2">DON'S</text>
+ <text x="333" y="273" font-size="70" letter-spacing="2" fill="url(#chrome)" stroke="#ffffff" stroke-opacity=".12" stroke-width="1">DIGITAL CARDS</text>
+</g>
+<path d="M335 296 H1115" stroke="url(#accent)" stroke-width="5" stroke-linecap="round" filter="url(#sg)"/>
+<g fill="url(#accent)" filter="url(#g)">
+ <path d="M1135 271l8 17 19 3-14 13 4 19-17-9-17 9 4-19-14-13 19-3z"/>
+ <circle cx="1030" cy="68" r="3"/><circle cx="1080" cy="49" r="2"/><circle cx="1120" cy="86" r="2.5"/>
+</g>
 </svg>
