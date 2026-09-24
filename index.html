@@ -303,6 +303,28 @@ filter:blur(4px);mix-blend-mode:screen}
   .hero-review-cred .gold-star:before{font-size:25px}
 }
 </style>
+
+<style>
+/* Logo fix: preserve the original logo exactly, with stable sizing on mobile */
+.logo{flex:0 0 auto;min-width:0}
+.logo-image{
+  display:block;
+  flex:0 0 auto;
+  width:220px;
+  height:56px;
+  max-width:none;
+  max-height:none;
+  object-fit:contain;
+  object-position:left center;
+}
+@media(max-width:850px){
+  .logo-image{width:170px;height:48px}
+}
+@media(max-width:560px){
+  .logo{width:auto;flex:0 0 145px}
+  .logo-image{width:145px;height:44px}
+}
+</style>
 </head>
 <body>
 <header class="site-header"><div class="container nav">
