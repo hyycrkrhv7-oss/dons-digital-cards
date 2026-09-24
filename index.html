@@ -47,45 +47,6 @@ footer{border-top:1px solid var(--border);padding:32px 0;color:var(--muted);font
   .tcg-visual{flex-basis:120px;width:120px;max-width:120px;height:168px}
 }
 
-
-/* Hero v2 — collector-focused card fan-out */
-.hero-v2{position:relative;min-height:690px;display:grid;grid-template-columns:46% 54%;align-items:center;gap:10px;overflow:hidden;padding:42px 0 55px}
-.hero-v2:before{content:"";position:absolute;inset:5% -8%;background:radial-gradient(circle at 72% 46%,rgba(118,64,255,.28),transparent 28%),radial-gradient(circle at 83% 48%,rgba(0,193,255,.18),transparent 35%);filter:blur(28px);pointer-events:none}
-.hero-v2-copy{position:relative;z-index:5;padding:25px 0}
-.hero-v2-kicker{color:#55ddff;font-size:11px;font-weight:900;letter-spacing:.24em;margin-bottom:18px}
-.hero-v2 h1{margin:0;max-width:560px;font-size:clamp(56px,6.4vw,88px);line-height:.9;letter-spacing:-.07em}
-.hero-v2 h1 span{display:block;color:transparent;background:linear-gradient(90deg,#b56cff,#53dfff);-webkit-background-clip:text;background-clip:text}
-.hero-v2-sub{max-width:520px;margin:24px 0 28px;color:#d3e1f3;font-size:17px;line-height:1.55}
-.hero-v2-trust{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 24px}
-.hero-v2-trust>div{display:flex;align-items:center;gap:9px;padding:9px 11px;border:1px solid rgba(83,217,255,.18);border-radius:10px;background:rgba(4,16,38,.66);backdrop-filter:blur(10px)}
-.hero-v2-trust b{color:#5fe0ff;font-size:16px}
-.hero-v2-trust strong,.hero-v2-trust small{display:block}
-.hero-v2-trust strong{font-size:9px;letter-spacing:.08em;color:#eef7ff}
-.hero-v2-trust small{font-size:8px;color:#8ea4bf;margin-top:1px}
-.hero-v2-btn{padding:13px 19px;font-size:10px}
-.hero-v2-reviews{display:flex;align-items:center;gap:10px;width:max-content;max-width:100%;margin-top:22px;padding:12px 15px;border:1px solid rgba(154,99,255,.38);border-radius:12px;background:rgba(8,13,31,.74);box-shadow:0 12px 30px rgba(0,0,0,.18)}
-.hero-v2-reviews .stars{font-size:13px;color:#ffdb55;letter-spacing:2px;margin:0}
-.hero-v2-reviews strong{font-size:25px;line-height:1}
-.hero-v2-reviews span:last-child{font-size:8px;font-weight:900;letter-spacing:.08em;color:#b6c7dc}
-.hero-v2-art{position:relative;z-index:2;min-height:570px}
-.hero-v2-glow{position:absolute;width:540px;height:540px;right:0;top:50%;transform:translateY(-50%);border-radius:50%;background:radial-gradient(circle,rgba(102,77,255,.36) 0%,rgba(56,170,255,.16) 35%,transparent 68%);filter:blur(12px)}
-.hero-v2-art:before{content:"";position:absolute;inset:9% -10% 2% 4%;background:linear-gradient(145deg,rgba(20,68,148,.08),rgba(161,61,255,.08));border-radius:50%;filter:blur(22px)}
-.hero-v2-card{position:absolute;width:176px;aspect-ratio:63/88;border-radius:11px;background-repeat:no-repeat;background-position:center;background-size:100% 100%;box-shadow:0 25px 45px rgba(0,0,0,.48),0 0 25px rgba(69,217,255,.18);border:1px solid rgba(220,240,255,.28);transform-origin:50% 100%;transition:transform .25s ease,filter .25s ease;will-change:transform}
-.hero-v2-card:hover{filter:brightness(1.08);z-index:8}
-.hero-v2-pokemon{right:56%;top:23%;transform:rotate(-15deg);background-image:url("https://sleevenocardbehind.com/wp-content/uploads/2024/10/International-Pokemon-Card-Back%403x.png")}
-.hero-v2-magic{right:35%;top:9%;transform:rotate(-4deg);background-image:url("https://cards.scryfall.io/back.png")}
-.hero-v2-yugioh{right:17%;top:18%;transform:rotate(10deg);background-image:url("https://images.ygoprodeck.com/images/cards/89631139.jpg")}
-.hero-v2-onepiece{right:4%;top:36%;transform:rotate(18deg);background-image:url("https://en.wikipedia.org/wiki/Special:Redirect/file/One_Piece_Card_Game_back.webp")}
-.hero-v2-lorcana{right:26%;top:42%;transform:rotate(5deg);display:flex;align-items:center;justify-content:center;flex-direction:column;background:radial-gradient(circle at 50% 42%,#f5d36a 0 5%,transparent 6%),radial-gradient(circle at 50% 50%,#18233b 0 23%,transparent 24%),linear-gradient(145deg,#10172b,#02050e 55%,#6b4aa6);color:#f7e5a3;text-shadow:0 2px 8px #000;z-index:5}
-.hero-v2-lorcana span{font-size:17px;font-weight:900;letter-spacing:.16em;margin-top:105px}
-.hero-v2-lorcana i{position:absolute;top:34px;font-size:30px;font-style:normal}
-.hero-v2-orb{position:absolute;border-radius:50%;filter:blur(2px);opacity:.75;pointer-events:none}
-.hero-v2-orb:after{content:"";display:block;width:100%;height:100%;border-radius:50%;box-shadow:0 0 25px currentColor}
-.orb-a{width:12px;height:12px;right:20%;top:13%;background:#55dfff;color:#55dfff}
-.orb-b{width:8px;height:8px;right:10%;top:62%;background:#b76cff;color:#b76cff}
-.orb-c{width:10px;height:10px;right:47%;top:7%;background:#fff;color:#fff}
-@media(max-width:900px){.hero-v2{grid-template-columns:1fr;min-height:auto;padding:55px 0 35px}.hero-v2-copy{padding:0}.hero-v2 h1{font-size:clamp(54px,11vw,78px)}.hero-v2-art{min-height:470px;margin-top:8px}.hero-v2-card{width:145px}.hero-v2-pokemon{right:59%;top:23%}.hero-v2-magic{right:37%;top:9%}.hero-v2-yugioh{right:16%;top:18%}.hero-v2-onepiece{right:2%;top:35%}.hero-v2-lorcana{right:27%;top:42%}}
-@media(max-width:560px){.hero-v2{padding-top:38px}.hero-v2-kicker{font-size:9px}.hero-v2 h1{font-size:clamp(47px,14vw,65px)}.hero-v2-sub{font-size:15px}.hero-v2-trust{display:grid;grid-template-columns:1fr}.hero-v2-trust>div{width:100%}.hero-v2-reviews{width:100%;justify-content:center}.hero-v2-art{min-height:360px;margin-top:0}.hero-v2-card{width:108px;border-radius:8px}.hero-v2-pokemon{right:58%;top:25%}.hero-v2-magic{right:36%;top:8%}.hero-v2-yugioh{right:14%;top:20%}.hero-v2-onepiece{right:0;top:37%}.hero-v2-lorcana{right:26%;top:43%}.hero-v2-lorcana span{font-size:10px;margin-top:67px}.hero-v2-lorcana i{top:21px;font-size:22px}}
 </style>
 <style>
 .find-us{padding-top:70px}.market-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.market-card{min-height:190px;padding:26px;border:1px solid var(--border);border-radius:18px;background:linear-gradient(145deg,rgba(10,26,53,.9),rgba(4,10,22,.94));display:flex;align-items:center;transition:.25s}.market-card:hover{transform:translateY(-5px);border-color:rgba(111,215,255,.5)}.market-card h3{font-size:25px;margin:0 0 8px}.market-card p{color:var(--muted);font-size:13px;margin:0 0 15px}.market-card span{font-size:10px;font-weight:900;letter-spacing:.1em;color:#72ddff}.coming-soon{border-color:rgba(154,99,255,.35);background:radial-gradient(circle at 85% 15%,rgba(154,99,255,.16),transparent 45%),linear-gradient(145deg,rgba(12,20,48,.92),rgba(4,10,22,.94))}.coming-soon span{color:#c49cff}@media(max-width:850px){.market-grid{grid-template-columns:1fr}} 
@@ -219,35 +180,27 @@ filter:blur(4px);mix-blend-mode:screen}
 
 <section class="section inventory hero-tcg" id="inventory">
 <div class="container">
-  <div class="hero-v2">
-    <div class="hero-v2-copy">
-      <div class="hero-v2-kicker">DON'S DIGITAL CARDS</div>
-      <h1>Cards for <span>every collector</span></h1>
-      <p class="hero-v2-sub">Trading cards, sealed product, and collector favorites from the games you love.</p>
-      <div class="hero-v2-trust">
-        <div><b>✦</b><span><strong>FAST SHIPPING</strong><small>Secure, reliable delivery</small></span></div>
-        <div><b>✓</b><span><strong>TRUSTED SELLER</strong><small>190+ positive reviews</small></span></div>
-        <div><b>▣</b><span><strong>SECURE CHECKOUT</strong><small>Shop through TCGplayer</small></span></div>
-      </div>
-      <a class="btn primary hero-v2-btn" href="https://tcgplayer.com/sellers/DonsDigitalCards/7028c644" target="_blank" rel="noopener">SHOP TCGPLAYER ↗</a>
-      <a class="hero-v2-reviews" href="https://tcgplayer.com/sellers/DonsDigitalCards/7028c644" target="_blank" rel="noopener">
-        <span class="stars">★★★★★</span>
-        <strong>190+</strong>
-        <span>POSITIVE REVIEWS ON TCGPLAYER</span>
-      </a>
-    </div>
-    <div class="hero-v2-art" aria-label="Pokémon, Magic: The Gathering, Yu-Gi-Oh!, One Piece and Lorcana card backs">
-      <div class="hero-v2-glow"></div>
-      <div class="hero-v2-card hero-v2-pokemon"></div>
-      <div class="hero-v2-card hero-v2-magic"></div>
-      <div class="hero-v2-card hero-v2-yugioh"></div>
-      <div class="hero-v2-card hero-v2-onepiece"></div>
-      <div class="hero-v2-card hero-v2-lorcana"><span>LORCANA</span><i>✦</i></div>
-      <div class="hero-v2-orb orb-a"></div><div class="hero-v2-orb orb-b"></div><div class="hero-v2-orb orb-c"></div>
-    </div>
-  </div>
+<div class="hero-tcg-box">
+<div class="hero-tcg-copy">
+<h2><span>Trading Cards.</span> Sealed Product. Collectibles.</h2>
+<p>Singles, sealed products, and collector favorites from Pokémon, Magic: The Gathering, One Piece, and Yu-Gi-Oh! all in one place.</p><a class="btn primary hero-tcg-btn" href="https://tcgplayer.com/sellers/DonsDigitalCards/7028c644" target="_blank" rel="noopener">SHOP TCGPLAYER ↗</a>
 </div>
-</section>
+<div class="hero-tcg-art" aria-label="Pokémon, Magic: The Gathering, One Piece and Yu-Gi-Oh! cards">
+<div class="hero-card hero-pokemon"></div>
+<div class="hero-card hero-magic"></div>
+<div class="hero-card hero-onepiece"></div>
+<div class="hero-card hero-yugioh"></div>
+<div class="energy energy-blue"></div><div class="energy energy-purple"></div><div class="energy energy-gold"></div>
+</div>
+</div>
+<div class="hero-review-cred"><strong>190+</strong><span>POSITIVE TCGPLAYER REVIEWS</span><a href="https://tcgplayer.com/sellers/DonsDigitalCards/7028c644" target="_blank" rel="noopener">VERIFY OUR FEEDBACK ↗</a></div>
+<div class="hero-tcg-trust">
+<div><strong>✓</strong><span><b>QUALITY CARDS</b><small>Carefully sourced inventory</small></span></div>
+<div><strong>▣</strong><span><b>FAST SHIPPING</b><small>Secure and reliable delivery</small></span></div>
+<div><strong>▤</strong><span><b>GREAT SELECTION</b><small>Singles, sealed and more</small></span></div>
+<div><strong>♙</strong><span><b>TRUSTED SELLER</b><small>190+ positive reviews</small></span></div>
+</div>
+</div></section>
 <section class="section find-us" id="find-us"><div class="container">
 <div class="section-head"><div class="kicker">WHERE TO FIND US</div><h2>Shop with Don's Digital Cards.</h2><p>Find us on the marketplaces where we're currently selling.</p></div>
 <div class="market-grid">
