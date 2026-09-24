@@ -200,6 +200,109 @@ filter:blur(4px);mix-blend-mode:screen}
   .hero-review-cred .gold-star:before{font-size:15px}
 }
 </style>
+
+<style>
+/* Credibility bar — polished three-column layout */
+.hero-review-cred{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  align-items:stretch;
+  gap:0;
+  margin:24px 0 6px;
+  padding:0;
+  min-height:108px;
+  overflow:hidden;
+  border:1px solid rgba(255,212,92,.42);
+  border-radius:18px;
+  background:
+    radial-gradient(circle at 15% 50%,rgba(255,212,92,.10),transparent 30%),
+    radial-gradient(circle at 85% 50%,rgba(154,99,255,.11),transparent 32%),
+    linear-gradient(105deg,rgba(13,17,29,.97),rgba(9,14,31,.96));
+  box-shadow:0 14px 35px rgba(0,0,0,.24),inset 0 0 35px rgba(255,212,92,.035);
+}
+.hero-review-cred > *{
+  min-width:0;
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.hero-review-cred > * + *{
+  border-left:1px solid rgba(255,255,255,.16);
+}
+.hero-review-cred strong{
+  font-size:46px;
+  font-weight:900;
+  line-height:1;
+  color:#ffe08a;
+  letter-spacing:-.04em;
+}
+.hero-review-cred span{
+  flex-direction:column;
+  line-height:1.25;
+  padding:15px;
+  color:#fff;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.12em;
+}
+.hero-review-cred a{
+  flex-direction:column;
+  gap:6px;
+  padding:15px;
+  color:#ffe08a;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.09em;
+  line-height:1.25;
+}
+.hero-review-cred a:after{
+  content:"↗";
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:20px;
+  height:20px;
+  border-radius:5px;
+  background:linear-gradient(135deg,#45d9ff,#6378ff);
+  color:#fff;
+  font-size:11px;
+}
+.hero-review-cred .gold-star{
+  flex-direction:column;
+  gap:4px;
+  padding:10px 8px;
+  color:#fff;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.09em;
+  line-height:1.25;
+}
+.hero-review-cred .gold-star:before{
+  content:"★";
+  font-size:30px;
+  line-height:1;
+  color:#ffd45c;
+  text-shadow:0 0 14px rgba(255,212,92,.45);
+}
+@media(max-width:560px){
+  .hero-review-cred{
+    min-height:96px;
+    border-radius:15px;
+  }
+  .hero-review-cred strong{font-size:34px}
+  .hero-review-cred span,
+  .hero-review-cred a,
+  .hero-review-cred .gold-star{
+    font-size:8px;
+    letter-spacing:.055em;
+    padding:8px 4px;
+  }
+  .hero-review-cred a:after{width:18px;height:18px;font-size:10px}
+  .hero-review-cred .gold-star:before{font-size:25px}
+}
+</style>
 </head>
 <body>
 <header class="site-header"><div class="container nav">
