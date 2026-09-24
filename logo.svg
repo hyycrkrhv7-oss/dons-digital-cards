@@ -1,49 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="t d">
-<title id="t">Don's Digital Cards</title><desc id="d">Flashy professional neon trading card logo</desc>
+<title id="t">Don's Digital Cards</title><desc id="d">Blue and purple neon Don's Digital Cards logo</desc>
 <defs>
- <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".28" stop-color="#bdeeff"/><stop offset=".5" stop-color="#fff"/><stop offset=".72" stop-color="#6f86a4"/><stop offset="1" stop-color="#fff"/></linearGradient>
- <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#00d9ff"/><stop offset=".5" stop-color="#536cff"/><stop offset="1" stop-color="#ef4cff"/></linearGradient>
- <linearGradient id="card1"><stop stop-color="#0bdcff"/><stop offset="1" stop-color="#5d4cff"/></linearGradient>
- <linearGradient id="card2"><stop stop-color="#ff8c25"/><stop offset="1" stop-color="#e947ff"/></linearGradient>
- <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
- <filter id="soft"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset=".32" stop-color="#eaf8ff"/><stop offset=".55" stop-color="#9bb5d0"/><stop offset=".72" stop-color="#ffffff"/><stop offset="1" stop-color="#a8c7df"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#00d9ff"/><stop offset=".55" stop-color="#407dff"/><stop offset="1" stop-color="#9a4dff"/></linearGradient>
+<linearGradient id="purple" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#514cff"/><stop offset="1" stop-color="#e64cff"/></linearGradient>
+<filter id="glow" x="-40%" y="-50%" width="180%" height="200%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="smallglow" x="-30%" y="-40%" width="160%" height="180%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 </defs>
-<!-- transparent background -->
-<g fill="none" stroke="url(#neon)" filter="url(#glow)" opacity=".9">
- <ellipse cx="610" cy="170" rx="535" ry="128" stroke-width="7" transform="rotate(-8 610 170)"/>
- <ellipse cx="650" cy="180" rx="490" ry="112" stroke-width="4" transform="rotate(10 650 180)"/>
+<!-- transparent logo, matching the supplied header mark -->
+<g fill="#071126" stroke="url(#blue)" stroke-width="7" filter="url(#glow)">
+ <rect x="72" y="98" width="148" height="220" rx="16" transform="rotate(-18 146 208)"/>
+ <rect x="110" y="65" width="148" height="220" rx="16" transform="rotate(-7 184 175)"/>
+ <rect x="150" y="56" width="148" height="220" rx="16" transform="rotate(5 224 166)"/>
 </g>
-<!-- four-card fan -->
-<g stroke-width="6" filter="url(#glow)">
- <rect x="115" y="72" width="150" height="220" rx="15" fill="#07122d" stroke="url(#card1)" transform="rotate(-13 190 182)"/>
- <rect x="175" y="48" width="150" height="220" rx="15" fill="#281a0d" stroke="url(#card2)" transform="rotate(-3 250 158)"/>
- <rect x="240" y="54" width="150" height="220" rx="15" fill="#081b3d" stroke="url(#card1)" transform="rotate(7 315 164)"/>
- <rect x="300" y="72" width="150" height="220" rx="15" fill="#130b09" stroke="#ff7b2f" transform="rotate(15 375 182)"/>
+<g fill="none" stroke="url(#blue)" stroke-width="4" opacity=".95">
+ <rect x="93" y="119" width="106" height="176" rx="11" transform="rotate(-18 146 208)"/>
+ <rect x="131" y="86" width="106" height="176" rx="11" transform="rotate(-7 184 175)"/>
+ <rect x="171" y="77" width="106" height="176" rx="11" transform="rotate(5 224 166)"/>
 </g>
-<g fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="2">
- <rect x="137" y="94" width="106" height="176" rx="10" transform="rotate(-13 190 182)"/>
- <rect x="197" y="70" width="106" height="176" rx="10" transform="rotate(-3 250 158)"/>
- <rect x="262" y="76" width="106" height="176" rx="10" transform="rotate(7 315 164)"/>
- <rect x="322" y="94" width="106" height="176" rx="10" transform="rotate(15 375 182)"/>
+<g opacity=".65" fill="none" stroke="#243d91" stroke-width="3">
+ <path d="M130 210l48-42 35 54-48 40z"/>
+ <circle cx="187" cy="174" r="28"/>
 </g>
-<g font-family="Arial,Helvetica,sans-serif" font-weight="900" text-anchor="middle">
- <text x="190" y="177" font-size="28" fill="#ffd447" transform="rotate(-13 190 177)">TCG</text>
- <text x="250" y="160" font-size="25" fill="#ff7a37" transform="rotate(-3 250 160)">CARD</text>
- <circle cx="315" cy="164" r="30" fill="none" stroke="#d7b75b" stroke-width="5"/>
- <path d="M295 164h40M315 144v40" stroke="#d7b75b" stroke-width="4"/>
- <circle cx="375" cy="182" r="31" fill="none" stroke="#ff8b2e" stroke-width="5"/>
- <path d="M350 162c18 14 34 14 50 0M350 202c18-14 34-14 50 0" stroke="#ff8b2e" stroke-width="4"/>
+<g font-family="Arial,Helvetica,sans-serif" font-weight="900" filter="url(#smallglow)">
+ <text x="300" y="196" font-size="128" letter-spacing="1" fill="#071126" stroke="#3ccfff" stroke-width="10" stroke-linejoin="round">DON'S</text>
+ <text x="300" y="196" font-size="128" letter-spacing="1" fill="url(#chrome)" stroke="#f4fbff" stroke-width="1.5">DON'S</text>
+ <text x="310" y="278" font-size="68" letter-spacing="2" fill="#071126" stroke="#8d56ff" stroke-width="8" stroke-linejoin="round">DIGITAL CARDS</text>
+ <text x="310" y="278" font-size="68" letter-spacing="2" fill="url(#chrome)" stroke="#ffffff" stroke-width="1">DIGITAL CARDS</text>
 </g>
-<!-- chrome wordmark -->
-<g font-family="Arial,Helvetica,sans-serif" font-weight="900" filter="url(#soft)">
- <text x="440" y="192" font-size="126" letter-spacing="2" fill="#08101f" stroke="#00cfff" stroke-width="12" opacity=".9">DON'S</text>
- <text x="440" y="192" font-size="126" letter-spacing="2" fill="url(#silver)" stroke="#fff" stroke-width="2">DON'S</text>
- <text x="450" y="273" font-size="66" letter-spacing="3" fill="#08101f" stroke="#a84cff" stroke-width="9">DIGITAL CARDS</text>
- <text x="450" y="273" font-size="66" letter-spacing="3" fill="url(#silver)" stroke="#fff" stroke-width="1">DIGITAL CARDS</text>
-</g>
-<path d="M445 296H1130" stroke="url(#neon)" stroke-width="6" stroke-linecap="round" filter="url(#soft)"/>
-<g fill="#fff" filter="url(#glow)">
- <path d="M1110 264l7 16 18 3-13 12 4 18-16-9-16 9 4-18-13-12 18-3z"/>
- <circle cx="1030" cy="70" r="3"/><circle cx="1070" cy="48" r="2"/><circle cx="1140" cy="100" r="2"/>
-</g>
+<path d="M310 300 C520 304 760 300 1085 300" fill="none" stroke="url(#purple)" stroke-width="6" stroke-linecap="round" filter="url(#smallglow)"/>
+<path d="M1035 304c34-7 43-30 67-45-6 25 8 30 34 26-19 15-28 32-42 49" fill="none" stroke="#b94cff" stroke-width="7" stroke-linecap="round" filter="url(#glow)"/>
+<path d="M1048 303c23-5 34-19 45-31" fill="none" stroke="#37d8ff" stroke-width="3" filter="url(#smallglow)"/>
+<g fill="#fff" filter="url(#glow)"><circle cx="1065" cy="76" r="3"/><circle cx="1092" cy="61" r="2"/><circle cx="1110" cy="95" r="2.5"/></g>
 </svg>
